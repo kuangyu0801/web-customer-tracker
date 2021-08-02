@@ -8,6 +8,7 @@ public final class Mappings {
     public static final String ADD_ITEM = "addItem";
     public static final String DELETE_ITEM = "deleteItem";
     public static final String VIEW_ITEM = "viewItem";
+    public static final String SHOW_ADD_FORM = "showAddForm";
     // == constructor ==
     private Mappings() {
 

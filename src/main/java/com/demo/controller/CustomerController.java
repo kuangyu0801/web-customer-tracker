@@ -2,6 +2,8 @@ package com.demo.controller;
 
 import com.demo.entity.Customer;
 import com.demo.service.CustomerService;
+import com.demo.util.ViewNames;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,7 +31,16 @@ public class CustomerController {
 		model.addAttribute("customers", customers);
 
 		// return the view
-		return "list-customers";
+		return ViewNames.CUSTOMER_LIST;
+	}
+
+	@GetMapping("/showFormForAdd")
+	public String showFormForAdd(Model model) {
+
+		Customer customer = new Customer();
+		// add object to model
+		model.addAttribute("customer", customer);
+		return ViewNames.CUSTOMER_FORM;
 	}
 	
 }

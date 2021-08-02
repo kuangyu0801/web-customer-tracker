@@ -18,6 +18,12 @@
 </div>
 <div id="container">
 	<div id="content">
+
+		<!-- put new buttom: Add Customer -->
+		<c:url var="addUrl" value="${Mappings.SHOW_ADD_FORM}"></c:url>
+		<a href="${addUrl}">Add Customer</a>
+
+
 		<!-- add html table here-->
 		<table border="1" cellpadding="5">
 			<tr>
