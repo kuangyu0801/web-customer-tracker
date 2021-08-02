@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface CustomerDAO {
 
-    public List<Customer> getCumstomers();
+    List<Customer> getCustomers();
 }

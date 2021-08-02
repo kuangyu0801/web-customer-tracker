@@ -20,8 +20,7 @@ public class CustomerDAOImpl implements CustomerDAO{
 
     // automatically begin and close session
     @Override
-    @Transactional
-    public List<Customer> getCumstomers() {
+    public List<Customer> getCustomers() {
         // get the hibernate session
         Session curSession = sessionFactory.getCurrentSession();
         // create a query
