@@ -20,7 +20,7 @@
 	<div id="content">
 
 		<!-- put new buttom: Add Customer -->
-		<c:url var="addUrl" value="${Mappings.SHOW_ADD_FORM}"></c:url>
+		<c:url var="addUrl" value="/customer/showFormForAdd"></c:url>
 		<a href="${addUrl}">Add Customer</a>
 
 
